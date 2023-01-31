@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+@import "@picocss/pico";
+
+:root {
+  font-size: 14px;
+  --spacing: 0.5rem;
+  --block-spacing-vertical: calc(var(--spacing) * 2);
+}

@@ -1,0 +1,4 @@
+<form (submit)="sendQuestion()">
+  <input [(ngModel)]="question" type="search" placeholder="Frage eingeben..." name="question" />
+  <button type="submit" [disabled]="isLoading()">Absenden</button>
+</form>

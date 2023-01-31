@@ -1,0 +1,14 @@
+<progress *ngIf="isLoading()"></progress>
+<div *ngIf="answer !== undefined">
+  <article class="answer">
+    {{answer.answer}}
+  </article>
+
+  <h2>Referenzen</h2>
+
+  <section class="references">
+    <div *ngFor="let text of answer.texts">
+      <app-text-reference [text]="text"></app-text-reference>
+    </div>
+  </section>
+</div>
